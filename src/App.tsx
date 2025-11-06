@@ -1,11 +1,25 @@
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
+import { Hero } from "./components/hero/Hero";
 
 
-function App() {
-  
+
+function App() {  
+
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element:<Hero />
+    },
+    {
+      path:"*",
+      element: <h3> The page is not found</h3>
+    }
+  ])
 
   return (
     <>
-    <h2 className="text-3xl font-bold pt-4 " >Hello react</h2>      
+    <RouterProvider router={router}       />
     </>
   )
 }
