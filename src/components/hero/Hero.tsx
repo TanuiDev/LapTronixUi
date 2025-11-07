@@ -1,11 +1,11 @@
 export const Hero = () => {
   return (
     <>
-      <div className="mt-3 p-3">
-        <h1 className="text-4xl font-bold text-blue-400">
+      <div className="mt-3 p-3 h-fit pl-4">
+        <h1 className="text-4xl font-bold text-secondary">
           Premium Tech at Your Fingertips
         </h1>
-        <p className="pt-4 text-1xl ">
+        <p className="pt-4 text-white text-4xl font-extralight text- ">
           Discover the latest laptops, accessories, and tech gear from top
           brands. <br /> Quality you can trust, prices you'll love.
         </p>
