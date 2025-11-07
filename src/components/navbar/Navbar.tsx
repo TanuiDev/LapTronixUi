@@ -4,7 +4,7 @@ import { NavLink } from "react-router"
 export const Navbar = () => {
   return (
    <>
-   <ul>
+   <ul className="flex gap-2 items-center mt-4 justify-center ">
     <li>
         <NavLink to='/'>Home</NavLink>
     </li>
@@ -23,7 +23,8 @@ export const Navbar = () => {
     <li>
         <NavLink to='about'>About Us</NavLink>
     </li>
-    </ul>   
+    </ul>  
+    
    </>
   )
 }

@@ -21,15 +21,15 @@ function App() {
       element:<Products />
     },
      {
-      path:'/',
+      path:'/contact',
       element:<Contact />
     },
      {
-      path:'/',
+      path:'/login',
       element:<Login />
     },
      {
-      path:'/',
+      path:'/register',
       element:<Register/>
     },
     {
