@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 export const Footer = () => {
   return (
     <>
@@ -11,10 +13,10 @@ export const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <NavLink to="/about" className="link link-hover">About us</NavLink>
+          <NavLink to="/contact" className="link link-hover">Contact</NavLink>
+          <NavLink to="/products" className="link link-hover">Products</NavLink>
+          <NavLink to="#" className="link link-hover">Press kit</NavLink>
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>

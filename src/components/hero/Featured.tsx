@@ -1,23 +1,25 @@
 import lapTop from '../../assets/images/laptop.jpeg'
+import headPhones from  '../../assets/images/headPhones.jpeg'
+import monitor from  '../../assets/images/monitor.jpeg'
 
 const Featured = () => {
     const featuredProducts =[
         {
             id: 1,
             name: "Premium Laptop Pro",
-            price: "$1,299",
+            price: "Ksh33,299",
             image:  lapTop       
         },
          {
             id: 1,
-            name: "Premium Laptop Pro",
-            price: "$1,299",
-            image:  lapTop       
+            name: "Wireless Headphones",
+            price: "Ksh1,299",
+            image:  headPhones      
         }, {
             id: 1,
-            name: "Premium Laptop Pro",
-            price: "$1,299",
-            image:  lapTop       
+            name: "4K Monitor Ultra",
+            price: "Ksh8,299",
+            image:  monitor       
         }
     ]
 
@@ -30,7 +32,7 @@ const Featured = () => {
                 featuredProducts.map((product)=>(
                     <div key={product.id} className='card  bg-blue-50  shadow-sm items-center pb-3  space-y-4'>
                         
-                        <img src={product.image}  alt="Laptop" className='w-100 h-40 object-cover ' />                        
+                        <img src={product.image}  alt="Laptop" className='w-100 h-70 object-cover ' />                        
                         <h2 className='text-slate-900 text-2xl font-bold'>{product.name}</h2>
                         <h3 className='text-slate-700 text-1xl'>{product.price}</h3>
 
