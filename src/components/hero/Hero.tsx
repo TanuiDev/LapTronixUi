@@ -1,4 +1,5 @@
 import { TbShoppingBagCheck } from "react-icons/tb";
+import { NavLink } from "react-router";
 
 export const Hero = () => {
   return (
@@ -13,8 +14,9 @@ export const Hero = () => {
         </p>
         <div className="mt-10">
           <button className="btn btn-primary text-xl pl-3  ">
-            {" "}
-            <TbShoppingBagCheck className="inline-block mr-2" /> Shop Now
+            <NavLink to="/products" className="flex items-center">
+              <TbShoppingBagCheck className="inline-block mr-2" /> Shop Now
+            </NavLink>
           </button>
         </div>
       </div>
