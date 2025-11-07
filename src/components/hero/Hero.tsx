@@ -12,7 +12,10 @@ export const Hero = () => {
           brands. <br /> Quality you can trust, prices you'll love.
         </p>
         <div className="mt-10">
-          <button className="btn btn-primary text-xl pl-3  "> <TbShoppingBagCheck className="inline-block mr-2" /> Shop Now</button>
+          <button className="btn btn-primary text-xl pl-3  ">
+            {" "}
+            <TbShoppingBagCheck className="inline-block mr-2" /> Shop Now
+          </button>
         </div>
       </div>
     </>
