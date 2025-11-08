@@ -60,6 +60,9 @@ export const Register = () => {
             {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword.message}</p>}
             <button type="submit" className="w-full rounded-md bg-indigo-500 px-3 py-1.5 text-base text-white hover:bg-indigo-600 focus:outline-2 focus:outline-indigo-500 sm:text-sm/6">Register</button>
           </form>
+          <div className="mt-4">
+            <p className="text-sm text-gray-500">Already have an account? <a href="/login" className="text-indigo-500 hover:underline">Login here</a></p>
+          </div>
         </div>
       </div>
       <Footer />

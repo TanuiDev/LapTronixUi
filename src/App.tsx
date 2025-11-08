@@ -7,6 +7,7 @@ import { Contact } from "./pages/Contact";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { About } from "./pages/About";
+import { Resetpassword } from "./components/ResetPassword/Resetpassword";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
     {
       path: "/about",
       element: <About />,
+    },
+    {
+      path: "/reset-password",
+      element: <Resetpassword />,
     },
     {
       path: "*",

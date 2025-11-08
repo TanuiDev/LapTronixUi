@@ -42,7 +42,12 @@ export const Login = () => {
             {errors.passwordHash && <p className="text-red-500">{errors.passwordHash.message}</p>}
             <button type="submit" className="w-full rounded-md bg-indigo-500 px-3 py-1.5 text-base text-white hover:bg-indigo-600 focus:outline-2 focus:outline-indigo-500 sm:text-sm/6">Login</button>
           </form>
+           <div className="mt-4">
+          <p className="text-sm text-gray-500">Don't have an account? <a href="/register" className="text-indigo-500 hover:underline">Register here</a></p>
+          <p className="text-sm text-gray-500">Forgot your password? <a href="/reset-password" className="text-indigo-500 hover:underline">Reset it here</a></p>
         </div>
+        </div>
+       
       </div>
       <Footer />
     </>
