@@ -7,6 +7,11 @@ export const Register = () => {
       <Navbar />
       <div>
         <h3>Register for an account here</h3>
+        <div>
+          <form >
+            
+          </form>
+        </div>
       </div>
       <Footer />
     </>

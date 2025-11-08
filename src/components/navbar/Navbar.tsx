@@ -49,7 +49,7 @@ export const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl text-blue-600 font-black">
+          <a className="btn btn-ghost text-xl md:text-3xl text-blue-600 font-black ">
             TechStore
           </a>
         </div>
