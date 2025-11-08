@@ -5,11 +5,11 @@ import { NavLink } from "react-router";
 export const Hero = () => {
   return (
     <>
-      <div className="card rounded-lg bg-gray-800 mt-3 p-3 h-fit pl-4  bg-cover br-2 shadow-lg ">
+      <div className="card rounded-lg bg-gray-800 mt-3 p-3 h-fit pl-4 bg-[url('https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=300&fit=crop')]  bg-cover  bg-center  br-2 shadow-lg ">
         <h1 className="text-4xl font-bold text-secondary">
           Premium Tech at Your Fingertips
         </h1>
-        <p className="pt-4 text-white  font-semibold h-60 sm:text-2xl md:text-4xl">
+        <p className="pt-4 text-gray-100  font-semibold h-60 sm:text-2xl md:text-4xl">
           Discover the latest laptops, accessories, and tech gear from top
           brands. <br /> Quality you can trust, prices you'll love.
         </p>
