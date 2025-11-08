@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 export const Hero = () => {
   return (
     <>
-      <div className="mt-3 p-3 h-fit pl-4  bg-cover br-2 shadow-lg ">
+      <div className="card rounded-lg bg-gray-800 mt-3 p-3 h-fit pl-4  bg-cover br-2 shadow-lg ">
         <h1 className="text-4xl font-bold text-secondary">
           Premium Tech at Your Fingertips
         </h1>
@@ -13,7 +13,7 @@ export const Hero = () => {
           Discover the latest laptops, accessories, and tech gear from top
           brands. <br /> Quality you can trust, prices you'll love.
         </p>
-        <div className="mt-10">
+        <div className="mt-6 flex pb-4">
           <button className="btn btn-primary text-xl pl-3  ">
             <NavLink to="/products" className="flex items-center">
               <TbShoppingBagCheck className="inline-block mr-2" /> Shop Now
