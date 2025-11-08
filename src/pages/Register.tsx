@@ -21,7 +21,7 @@ export const Register = () => {
     lastName: Yup.string().required("Last name is required"),
     userName: Yup.string().required("Username is required"),
     emailAddress: Yup.string().email("Invalid email format").required("Email is required"),
-    phoneNumber: Yup.string().required("Phone number is required"),
+    phoneNumber: Yup.string().min(10, "Phone number must be at least 10 characters").required("Phone number is required"),
     passwordHash: Yup.string().min(8, "Password must be at least 8 characters").required("Password is required"),
     confirmPassword: Yup.string()
       .oneOf([Yup.ref('passwordHash')], 'Passwords must match')
@@ -37,10 +37,13 @@ export const Register = () => {
   return (
     <>
       <Navbar />
-      <div>
-        <h3 className="text-lg font-semibold text-center">Register for an account here</h3>
-        <div className="mt-10 mb-10 sm:mx-auto sm:w-full sm:max-w-sm">          
-          <form onSubmit={handleSubmit(onsubmitHandler)} className="space-y-3 bg-gray-900/50 p-6 rounded-lg">
+      <div>        
+        <div className="mt-10 mb-10 sm:mx-auto sm:w-full sm:max-w-sm bg-gray-900/50 p-6 rounded-lg">  
+           <div className=" text-center justify-center mb-6 ">
+            <h1 className="text-3xl font-bold mb-4 text-blue-600">TechStore</h1>            
+            <p className="text-sm text-gray-500">Register an Account</p>
+          </div>        
+          <form onSubmit={handleSubmit(onsubmitHandler)} className="space-y-3 ">
             <input type="text" placeholder="Enter you first name..." {...register("firstName")} className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
             {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
             <input type="text" placeholder="Enter you last name..." {...register("lastName")} className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
