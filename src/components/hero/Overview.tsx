@@ -11,14 +11,14 @@ export const Overview = () => {
   return (
     <>
       <div className="mt-10">
-        <h3 className="text-4xl font-bold text-primary pt-5 text-center mb-5 ">
+        <h3 className="text-2xl font-bold text-primary  pt-5 text-center mb-5 md:text-4xl ">
           Shop by Category
         </h3>
-        <div className="gap-4 sm:w-full md:flex justify-between mb-3 p-10">
+        <div className="gap-4  sm:w-full md:flex justify-between mb-3 space-y-4 space-x-4">
           {categories.map((category) => (
             <div
               key={category.name}
-              className="card w-full md:flex bg-blue-50  shadow-sm items-center p-3 "
+              className="card w-full md:flex bg-blue-50  shadow-sm items-center  p-3 "
             >
               <div className="text-6xl items-center text-gray-700 pb-10 ">
                 {category.icon}

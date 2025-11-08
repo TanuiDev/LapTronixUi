@@ -30,16 +30,16 @@ const Featured = () => {
         Featured Products
       </h2>
 
-      <div className="w-full md: flex items-center justify-between gap-4 mt-3 p-5">
+      <div className="sm:w-full md:flex  items-center justify-between   space-y-4 space-x-4 mt-3 mt:px-2 ">
         {featuredProducts.map((product) => (
           <div
             key={product.id}
-            className="card  bg-blue-50  shadow-sm items-center pb-3  space-y-4"
+            className="card  bg-blue-50  shadow-sm items-center pb-3 "
           >
             <img
               src={product.image}
               alt="Laptop"
-              className="w-100 h-70 object-cover "
+              className="w-full md:w-100 h-70 object-cover br-2"
             />
             <h2 className="text-slate-900 text-2xl font-bold">
               {product.name}
