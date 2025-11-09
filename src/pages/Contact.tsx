@@ -10,18 +10,18 @@ export const Contact = () => {
       icon: IoMailOutline,
       title: "Email",
       value: "support@techstore.com",
-      description: "We'll respond within 24 hours",
+      description: "We'll respond within 3 hours",
     },
     {
       icon: FiPhoneCall,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      description: "Mon-Fri 9am-6pm EST",
+      value: "+254718105315",
+      description: "Mon-Fri 9am-6pm EAT",
     },
     {
       icon: BiMap,
       title: "Office",
-      value: "123 Tech Street, San Francisco, CA 94102",
+      value: "123 Tech Street, Nairobi, Kenya",
       description: "Visit us during business hours",
     },
   ];
