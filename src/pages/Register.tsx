@@ -37,7 +37,7 @@ export const Register = () => {
   return (
     <>
       <Navbar />
-      <div>        
+      <div className="">        
         <div className="mt-10 mb-10 w-full md:w-1/2 sm:mx-auto bg-gray-800 py-6 rounded-b-lg shadow-lg p-6">  
            <div className=" text-center justify-center mb-6 ">
             <h1 className="text-3xl font-bold mb-4 text-blue-600">TechStore</h1>            

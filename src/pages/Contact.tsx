@@ -30,7 +30,7 @@ export const Contact = () => {
   return (
     <>
       <Navbar />      
-     <div className="items-center p-3 bg-gray-700 rounded-b-full">
+     <div className="items-center p-3 bg-gray-500 rounded-b-full">
       <h1 className="text-3xl text-center font-bold pt-3 mb-4 text-blue-600">Get in Touch</h1>
        <div className="mb-10 flex flex-col md:flex-row items-center justify-center p-6">        
         <div className="w-full md:w-1/2 mb-8">
@@ -39,15 +39,15 @@ export const Contact = () => {
             <h2 className="text-xl md:text-2xl text-center font-bold mt-4 mb-4">Send us a Message</h2>          
 
             <div className="mb-4">
-              <label className="block text-gray-100 mb-2" htmlFor="name">Name</label>
+              <label className="block text-xl md:text-2xl text-gray-100 mb-2" htmlFor="name">Name</label>
               <input className="w-full p-2 border rounded" type="text" id="name" name="name" required />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-100 mb-2" htmlFor="email">Email</label>
+              <label className="block text-xl md:text-2xl text-gray-100 mb-2" htmlFor="email">Email</label>
               <input className="w-full p-2 border rounded" type="email" id="email" name="email" required />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-100 mb-2" htmlFor="message">Message</label>
+              <label className="block text-xl md:text-2xl text-gray-100 mb-2" htmlFor="message">Message</label>
               <textarea className="w-full p-2 border rounded" id="message" name="message" rows={5} required></textarea>
             </div>
             <div className="text-center">

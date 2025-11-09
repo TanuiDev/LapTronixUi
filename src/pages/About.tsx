@@ -29,14 +29,11 @@ export const About = () => {
     <>
       <Navbar />
       <div className="items-center justify-center flex flex-col text-center  space-y-6 px-4">
-        <h1 className="text-4xl font-bold text-secondary">About TechStore</h1>
-        <p className="pt-4 text-white font-semibold  sm:text-xl md:text-2xl">
+        <h1 className="text-4xl mt-3 font-bold text-blue-600">About TechStore</h1>
+        {/* <p className="pt-4 text-white font-semibold  sm:text-xl md:text-2xl">
           Your trusted destination for premium laptops and tech accessories
           since 2025.
-        </p>
-        {/* <div className="">
-           <img src={laptop} alt="Laptop" className="mx-auto sm:w-full md:w-1/2 rounded-lg h-80 object-cover sm:h-80 md:h-96" />
-        </div> */}
+        </p>        */}
 
         <div className="card  mt-4 rounded-lg bg-gray-800 p-6">
           <p className="text-white text-lg sm:text-xl md:text-2xl">
