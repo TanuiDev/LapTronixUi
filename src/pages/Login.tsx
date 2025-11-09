@@ -26,9 +26,8 @@ export const Login = () => {
   return (
     <>
       <Navbar />
-      <div>
-        
-         <div className="mt-10 mb-10 sm:mx-auto sm:w-full sm:max-w-sm  bg-gray-900/50 p-6 rounded-lg"> 
+      <div className="pt-10">        
+         <div className="mt-10 mb-10 w-full md:w-1/2 sm:mx-auto bg-gray-800 py-6 rounded-b-lg shadow-lg p-6"> 
           <div className=" text-center justify-center mb-6">
             <h1 className="text-3xl font-bold mb-4 text-blue-600">TechStore</h1>
             <h4 className="text-lg text-gray-400">Welcome Back</h4>

@@ -38,12 +38,12 @@ export const Register = () => {
     <>
       <Navbar />
       <div>        
-        <div className="mt-10 mb-10 sm:mx-auto sm:w-full sm:max-w-sm bg-gray-900/50 p-6 rounded-lg">  
+        <div className="mt-10 mb-10 w-full md:w-1/2 sm:mx-auto bg-gray-800 py-6 rounded-b-lg shadow-lg p-6">  
            <div className=" text-center justify-center mb-6 ">
             <h1 className="text-3xl font-bold mb-4 text-blue-600">TechStore</h1>            
             <p className="text-sm text-gray-500">Register an Account</p>
           </div>        
-          <form onSubmit={handleSubmit(onsubmitHandler)} className="space-y-3 ">
+          <form onSubmit={handleSubmit(onsubmitHandler)} className="space-y-3 w-full ">
             <input type="text" placeholder="Enter you first name..." {...register("firstName")} className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
             {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
             <input type="text" placeholder="Enter you last name..." {...register("lastName")} className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
