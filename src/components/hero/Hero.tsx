@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 export const Hero = () => {
   return (
     <>
-<div className="card rounded-lg bg-gray-800 mt-3 p-3 h-fit pl-4 bg-[url('https://i.pinimg.com/1200x/f3/80/d1/f380d1d910c3cfc744cbbaefd9fdd794.jpg')] bg-cover relative bg-center ">
+      <div className="card rounded-lg bg-gray-800 mt-3 p-3 h-fit pl-4 bg-[url('https://i.pinimg.com/1200x/f3/80/d1/f380d1d910c3cfc744cbbaefd9fdd794.jpg')] bg-cover relative bg-center ">
         <h1 className="text-4xl text-center font-bold text-cyan-400 sm:text-5xl md:text-6xl">
           Premium Tech at Your Fingertips
         </h1>

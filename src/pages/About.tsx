@@ -29,7 +29,9 @@ export const About = () => {
     <>
       <Navbar />
       <div className="items-center justify-center flex flex-col text-center  space-y-6 px-4">
-        <h1 className="text-4xl mt-3 font-bold text-blue-600">About TechStore</h1>
+        <h1 className="text-4xl mt-3 font-bold text-blue-600">
+          About TechStore
+        </h1>
         {/* <p className="pt-4 text-white font-semibold  sm:text-xl md:text-2xl">
           Your trusted destination for premium laptops and tech accessories
           since 2025.
